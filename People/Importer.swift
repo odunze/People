@@ -33,6 +33,7 @@ class Importer {
                 let decoder = JSONDecoder()
                 let myTry = try decoder.decode(People.self, from: grabbedData)
                 
+                //Assigning myTry to anything at this point doesn't work.
                 self.peopleController?.guestbook.append(myTry)
                 
             } catch { //In case decoding doesn't work

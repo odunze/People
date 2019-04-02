@@ -16,6 +16,7 @@ class PeopleView: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
+        ImportRef.peopleController = PeepRef
         ImportRef.getUsers()
         tableView.reloadData()
     }
